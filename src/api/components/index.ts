@@ -1,17 +1,10 @@
 import { Router } from 'express';
-import { UserRoutes } from './user/user.routes';
 import { BaseRoutes } from './base/base.routes';
-import { DespesaRoutes } from './despesa/despesa.routes';
+import { AutorRoutes } from './autor/autor.routes';
+import { LivroRoutes } from './livro/livro.routes';
+import { PessoaRoutes } from './pessoa/pessoa.routes'; 
 
-/**
- * Init component routes
- *
- * @param {Router} router
- * @param {string} prefix
- * @returns {void}
- */
-export function registerRoutes(router: Router, prefix: string = ''): void {
-  router.use(`${prefix}`, new BaseRoutes().routes());
-  router.use(`${prefix}/users`, new UserRoutes().routes());
-  router.use(`${prefix}/despesas`, new DespesaRoutes().routes());
-}
+router.use(`${prefix}`, new BaseRoutes().routes());
+router.use(`${prefix}/autor`, new AutorRoutes().routes());
+router.use(`${prefix}/livro`, new LivroRoutes().routes());
+router.use(`${prefix}/pessoa`, new PessoaRoutes().routes());
