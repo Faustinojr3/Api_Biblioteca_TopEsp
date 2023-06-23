@@ -50,7 +50,7 @@ export class App {
 
   public start(): void {
     this.app.listen(this.port, () => {
-      console.log(`Server online :${this.port}`); // eslint-disable-line no-console
+      console.log(`🏃 Server is running in :${this.port}`); // eslint-disable-line no-console
     });
   }
 }
