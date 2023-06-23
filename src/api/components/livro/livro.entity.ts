@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
-//FAUSTINO01
->>>>>>> Faustino_branch
 import { IsDateString, IsInt, IsNotEmpty, IsNumber, ValidateIf } from "class-validator";
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Autor } from './../autor/autor.entity'
@@ -45,7 +40,6 @@ export class Livro{
     @IsInt({
         message: "A Quantidade de exemplares disponível deve ser um numero inteiro"
     })
-
     @Column()
     exemplares_disponivel!: number;
 

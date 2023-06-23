@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
-//FAUSTINO01
->>>>>>> Faustino_branch
 import { Request, Response } from 'express';
 import { AppDataSource } from '../../../config/database/mysql-datasource.config';
 import { Pessoa } from './pessoa.entity';
