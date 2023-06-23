@@ -1,15 +1,12 @@
-//FAUSTINO01
-import { Router } from "express";
-import { AutorController } from './autor.controller';
+import { Router } from 'express';  
+import { PessoaController } from './pessoa.controller';
 
-export class AutorRoutes {
-
+export class PessoaRoutes{
     private router: Router = Router();
-    private controller: AutorController;
+    private controller: PessoaController;
 
-    constructor() {
-        
-        this.controller = new AutorController();
+    constructor(){
+        this.controller = new PessoaController();
         this.init();
     }
 
