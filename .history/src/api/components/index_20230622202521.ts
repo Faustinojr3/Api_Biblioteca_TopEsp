@@ -1,15 +1,4 @@
 import { Router } from 'express';
-<<<<<<< HEAD
-import { BaseRoutes } from './base/base.routes';
-import { AutorRoutes } from './autor/autor.routes';
-import { LivroRoutes } from './livro/livro.routes';
-import { PessoaRoutes } from './pessoa/pessoa.routes'; 
-
-router.use(`${prefix}`, new BaseRoutes().routes());
-router.use(`${prefix}/autor`, new AutorRoutes().routes());
-router.use(`${prefix}/livro`, new LivroRoutes().routes());
-router.use(`${prefix}/pessoa`, new PessoaRoutes().routes());
-=======
 //import { UserRoutes } from './user/user.routes';
 import { BaseRoutes } from './base/base.routes';
 import { AutorRoutes } from './autor/autor.routes';
@@ -38,4 +27,3 @@ export function registerRoutes(router: Router, prefix: string = ''): void {
   router.use(`${prefix}/pessoa`, new PessoaRoutes().routes());
   router.use(`${prefix}/emprestimo`, new EmprestimoRoutes().routes());
 }
->>>>>>> pedro
