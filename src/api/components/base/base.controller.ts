@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> fd226ba9acf162aeff38c68f0f99fa272c207b20
+=======
+//FAUSTINO01
+>>>>>>> Faustino_branch
 import { Request, Response } from 'express';
 
 export class BaseController {
